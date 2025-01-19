@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  position: relative;
+  width: 1920px;
+  height:950px;
+}
+.container::before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height:950px;
+  background-image:linear-gradient(rgba(13,13,13,.9),rgba(13,13,13,.9), rgba(13,13,13,.9)), 
+  url('/hp-image.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; 
+} 
+
+
+
+
+.MenuBgImg2{
+  position: relative;
+  width: 1923px;
+  height:468px;
+}
+.MenuBgImg2::before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1923px;
+  height:468px;
+  background-image:linear-gradient(rgba(13,13,13,.7),rgba(13,13,13,.7), rgba(13,13,13,.7)), 
+  url('/menu.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; 
+}
