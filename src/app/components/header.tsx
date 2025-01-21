@@ -9,7 +9,7 @@ export default function Header({ route }: { route: string }) {
       <div className="flex flex-col gap-8">
         <h1 className="text-6xl font-bold text-white"> {route}</h1>
         <div className="w-full flex justify-center gap-6 items-center text-white">
-          <span>Home </span>
+          <span> Home </span>
           <span className="text-orange-500">{ route }</span>
         </div>
       </div>
